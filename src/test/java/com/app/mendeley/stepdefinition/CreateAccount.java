@@ -88,7 +88,7 @@ public class CreateAccount {
 		seleniumDriver.select(text, object);
 	}
 
-	/** Clean up **/
+	/** Clean up - close the browsers  **/
 	@After
 	public void closeBrowsers(){
 		seleniumDriver.cleanUp();
