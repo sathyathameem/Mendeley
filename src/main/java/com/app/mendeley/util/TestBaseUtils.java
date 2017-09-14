@@ -167,6 +167,7 @@ public class TestBaseUtils {
 		return w;
 		}
 		
+		//Close the browsers
 		public void cleanUp(){
 			driver.close();
 		}
