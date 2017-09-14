@@ -88,7 +88,7 @@ public class CreateAccount {
 		seleniumDriver.select(text, object);
 	}
 
-	/** Clean up - close the browsers -After Hook. **/
+	/** Clean up - Close the browsers -After Hook. **/
 	@After
 	public void closeBrowsers(){
 		seleniumDriver.cleanUp();
