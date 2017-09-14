@@ -1,0 +1,18 @@
+Feature: Create Account in www.mendeley.com
+  In order to use the features available in the Mendely.com
+  As a user I want to create a new account for mendeley.com
+
+# The url www.mendeley.com is redirecting to Elsivier site. 
+#Hence automated couple of scenarios of the create account page in the url https://www.mendeley.com/join/?switched=true
+
+Background: 
+    Given I am on "MendeleyHome" page
+  @Ignore
+  Scenario: To check for the create account links in the Homepage
+    Then "createaccount1lnk" should be present
+    Then "createaccount2lnk" should be present
+	@Ignore
+  Scenario: To go to create account page
+    When I click on "createaccount1lnk"
+    Then I verify "title" of the create account page
+
