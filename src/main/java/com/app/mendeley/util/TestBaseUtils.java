@@ -157,18 +157,6 @@ public class TestBaseUtils {
 			}
 		}
 		
-			
-			
-	
-
-		
-		
-		
-		
-		
-		
-		
-		
 		/********Singleton**********/
 		public static TestBaseUtils getInstance(){
 			
@@ -179,7 +167,9 @@ public class TestBaseUtils {
 		return w;
 		}
 		
-		
+		public void cleanUp(){
+			driver.close();
+		}
 		
 	
 	}
